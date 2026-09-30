@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏁 Ramo para Aldairsito</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="chispas" id="chispas"></div>
+
+    <div class="contenedor">
+        <div class="titulo">
+            <h1>🏁 DÍA DE LOS CARRITOS 🏁</h1>
+        </div>
+
+        <div class="nombre">✨ ALDAIRSITO ✨</div>
+        <p class="subtitulo">💜 Solo tus orquídeas favoritas 💜</p>
+
+        <div class="ramo-contenedor">
+            <!-- Capa exterior -->
+            <div class="orquidea o1">🪻</div>
+            <div class="orquidea o2">💜</div>
+            <div class="orquidea o3">💜</div>
+            <div class="orquidea o4">🪻</div>
+            <!-- Capa media -->
+            <div class="orquidea o5">💜</div>
+            <div class="orquidea o6">💜</div>
+            <div class="orquidea o7">🪻</div>
+            <div class="orquidea o8">🪻</div>
+            <!-- Capa central -->
+            <div class="orquidea o9">💜</div>
+            <div class="orquidea o10">💜</div>
+            <div class="orquidea o11">🪻</div>
+            <div class="orquidea o12">🪻</div>
+            <!-- Capa baja -->
+            <div class="orquidea o13">💜</div>
+            <div class="orquidea o14">💜</div>
+
+            <!-- Carritos Grandes -->
+            <div class="coche c1">🏎️</div>
+            <div class="coche c2">🚗</div>
+            <div class="coche c3">🚙</div>
+            <div class="coche c4">🏎️</div>
+
+            <!-- Lazo y Tallo -->
+            <div class="base-ramo">
+                <div class="lazo">🎀</div>
+                <div class="tallo"></div>
+            </div>
+        </div>
+
+        <!-- Mensajes -->
+        <div class="tarjeta">
+            <h2>💛 Este ramo es para ti</h2>
+
+            <div class="mensaje">
+                En lugar de flores comunes… te regalo algo que nunca se marchita 💜✨
+            </div>
+            <div class="mensaje">
+                Cada carrito representa un momento que me hace sonreír cuando pienso en ti 🏎️
+            </div>
+            <div class="mensaje">
+                Y estas orquídeas, tus favoritas… porque tú mereces lo que más te gusta 💜
+            </div>
+            <div class="mensaje">
+                No necesito que seas el más rápido ni el primero en llegar… solo quiero que vayas conmigo 🤝
+            </div>
+            <div class="mensaje">
+                Eres mi carrera favorita, la que quiero recorrer una y mil veces sin cansarme 💛
+            </div>
+            <div class="mensaje">
+                Gracias por ser tan especial, por brillar tanto y por hacer que todo valga la pena ✨
+            </div>
+
+            <p class="corazon-final">💛</p>
+            <p class="firma">— Para ti, siempre 💛✨</p>
+        </div>
+
+        <div class="meta">
+            🏁 La carrera contigo recién comienza 🏎️💨
+        </div>
+    </div>
+
+    <script>
+        const contenedor = document.getElementById('chispas');
+        for (let i = 0; i < 60; i++) {
+            const chispa = document.createElement('div');
+            chispa.classList.add('chispa');
+            chispa.style.left = Math.random() * 100 + '%';
+            chispa.style.animationDelay = Math.random() * 5 + 's';
+            chispa.style.width = (Math.random() * 5 + 3) + 'px';
+            chispa.style.height = chispa.style.width;
+            contenedor.appendChild(chispa);
+        }
+    </script>
+</body>
+</html>
